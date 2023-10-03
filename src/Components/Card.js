@@ -17,7 +17,7 @@ const Card = ({ movieData, isLiked = false }) => {
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) setEmail(currentUser.email);
-    else navigate("/logins");
+    else navigate("/login");
   });
 // console.log(movieData)
   const addToList = () => {

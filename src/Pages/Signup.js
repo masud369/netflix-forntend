@@ -28,7 +28,7 @@ const Signup = () => {
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) {
-      navigate("/netflex");
+      navigate("/");
     }
   });
   return (
