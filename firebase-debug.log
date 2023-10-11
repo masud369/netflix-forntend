@@ -1,0 +1,43 @@
+[debug] [2023-10-11T03:13:37.927Z] ----------------------------------------------------------------------
+[debug] [2023-10-11T03:13:37.932Z] Command:       C:\node32\node.exe C:\node32\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-11T03:13:37.934Z] CLI Version:   12.6.2
+[debug] [2023-10-11T03:13:37.934Z] Platform:      win32
+[debug] [2023-10-11T03:13:37.935Z] Node Version:  v16.14.0
+[debug] [2023-10-11T03:13:37.936Z] Time:          Wed Oct 11 2023 09:13:37 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-10-11T03:13:37.937Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-11T03:13:38.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-11T03:13:38.171Z] > authorizing via signed-in user (masud.web.p@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\User\Desktop\html pratice\REACT PROJECT\Netflex\forntend
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-10-11T03:13:48.880Z] Using project from CLI flag: netflex-clone-b4a86
+[debug] [2023-10-11T03:13:48.886Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflex-clone-b4a86 [none]
+[debug] [2023-10-11T03:13:49.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflex-clone-b4a86 403
+[debug] [2023-10-11T03:13:49.577Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflex-clone-b4a86 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-10-11T03:13:49.578Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-10-11T03:13:49.772Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\node32\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\node32\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project netflex-clone-b4a86. Please make sure the project exists and your account has permission to access it.

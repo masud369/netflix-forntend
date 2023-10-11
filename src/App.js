@@ -7,6 +7,7 @@ import Player from "./Pages/Player";
 import Movies from "./Pages/Movies";
 import TVshows from "./Pages/TVshows";
 import MyList from "./Components/MyList";
+import ItemList from "./Components/ItemList";
 const App = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/movie" exact element={<Movies/>} />
           <Route path="/tv" exact element={<TVshows/>} />
           <Route path="/mylist" exact element={<MyList/>} />
+          <Route path="/card" exact element={<ItemList />} />
           <Route path="/" exact element={<Netflex/>} />
         </Routes>
       </Router>
